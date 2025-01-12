@@ -3453,6 +3453,7 @@
     }
     .con1_wrap span {
         font-weight: bold;
+        margin-left: 50px;
         margin-right: 20px;
     }
     .con1_wrap p {
@@ -3467,7 +3468,8 @@
         font-size: 10px;
     }
     .con1_wrap .licence,
-    .con1_wrap .experience {
+    .con1_wrap .experience,
+    .con1_wrap .education {
         text-align: center;
     }
     .con1_wrap p.on {
@@ -3480,7 +3482,7 @@
         flex-wrap: wrap;
     }
     .con1_wrap .skill img {
-        width: 45px;
+        width: calc(80% / 4);
         height: 50px;
         margin: 5px;
         transition: 1.2s;
@@ -3713,7 +3715,7 @@
         position: relative;
     }
     .snsicon img {
-        width: 40px;
+        width: 45px;
         background-color: #fff;
         border-radius: 15px;
         padding: 5px;
@@ -3721,7 +3723,7 @@
     }
     .snsicon div {
         width: 0px;
-        height: 40px;
+        height: 45px;
         border: 2px solid #000;
         font-size: 12px;
         border-radius: 15px;
@@ -3734,7 +3736,7 @@
     }
 
     .snsicon div.on {
-        width: 120px;
+        width: 130px;
         opacity: 1;
     }
 
