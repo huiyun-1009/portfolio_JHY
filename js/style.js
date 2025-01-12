@@ -18,7 +18,7 @@ $(function () {
         return false;
     });
 
-    // header
+    // header, nav
     $("header li").on("mouseenter", function () {
         $(this).addClass("on");
     });
@@ -31,6 +31,9 @@ $(function () {
     $("nav i").on("click", function () {
         $("nav").hide();
         $("header i").removeClass("on");
+    });
+    $("nav li").on("click", function () {
+        $("nav").hide();
     });
     $("nav li").on("mouseenter", function () {
         $(this).addClass("on");

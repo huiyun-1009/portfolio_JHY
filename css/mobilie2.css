@@ -1,139 +1,4 @@
-@media (max-width: 1199px) and (min-width: 992px) {
-    /* intro */
-
-    .intro {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100;
-        animation: introOpacity 0.8s 2.2s forwards;
-    }
-    .intro_wrap {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-    }
-    .intro_content {
-        position: relative;
-        text-align: center;
-        height: 50%;
-        background-color: #020407;
-    }
-    .intro_top {
-        animation: introHeightAni 1s 0.8s forwards,
-            introTopContAni 1s 2s forwards;
-        overflow: hidden;
-        height: 65%;
-        will-change: height;
-    }
-    .intro_top::before {
-        content: "";
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        right: 0;
-        width: 0;
-        height: 3px;
-        transform: translateY(-50%);
-        background: brown;
-
-        animation: introLine 1s 0.8s forwards;
-        z-index: 1;
-    }
-    .intro_bottom {
-        animation: introBottomContAni 1s 2s forwards;
-        z-index: -1;
-    }
-    .intro_bottom::before {
-        content: "";
-        position: absolute;
-        top: -2px;
-        right: 0;
-        width: 0;
-        height: 3px;
-        transform: translateY(-50%);
-        background: brown;
-        animation: introLine 1s 0.8s forwards;
-        z-index: 1;
-    }
-    .intro_txt {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        display: inline-block;
-        color: #fff;
-        animation: introTxtAni 1.5s forwards;
-        transform: translate(-50%, 105%);
-        font-size: 8rem;
-        font-weight: 700;
-    }
-
-    @keyframes introLine {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 100%;
-        }
-    }
-
-    @keyframes introTopContAni {
-        0% {
-            transform: translateY(0%);
-        }
-        100% {
-            transform: translateY(-100%);
-        }
-    }
-
-    @keyframes introHeightAni {
-        0% {
-            height: 65%;
-        }
-        100% {
-            height: 50%;
-        }
-    }
-
-    @keyframes introTxtAni {
-        0% {
-            transform: translate(-50%, 20%);
-        }
-        30% {
-            transform: translate(-50%, -40%);
-        }
-        60% {
-            transform: translate(-50%, -15%);
-        }
-        100% {
-            transform: translate(-50%, 105%);
-        }
-    }
-
-    @keyframes introBottomContAni {
-        0% {
-            transform: translateY(0%);
-        }
-        100% {
-            transform: translateY(100%);
-        }
-    }
-
-    @keyframes introOpacity {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            visibility: hidden;
-        }
-    }
-
+@media (max-width: 575px) {
     /* header */
 
     header {
@@ -142,13 +7,13 @@
         justify-content: space-between;
         align-items: center;
         box-shadow: 2px 2px 5px #222;
-        padding: 0px 10px;
         box-sizing: border-box;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 99;
         background-color: #fff;
+        padding: 0 5px;
     }
     header.on {
         display: none;
@@ -164,23 +29,9 @@
         width: 50px;
     }
     header ul {
-        display: flex;
-        justify-content: center;
-        gap: 70px;
+        display: none;
     }
 
-    header li a {
-        font-size: 20px;
-    }
-    header li.on {
-        font-weight: bold;
-    }
-
-    header li.menu_active {
-        width: 100%;
-        border-bottom: 4px dotted var(--main-color);
-        padding-bottom: 5px;
-    }
     header i {
         font-size: 30px;
         text-align: right;
@@ -202,14 +53,13 @@
 
     #visual h2 {
         font-family: var(--main-font);
-        font-size: 10rem;
-        text-align: center;
+        font-size: 3.5rem;
         position: absolute;
         top: 150px;
         left: 50%;
         transform: translateX(-50%);
         color: #000;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
     }
     #visual h2 span {
         text-shadow: -1px 0 0px brown, 0 1px 0px brown, -2px 1px 0px brown,
@@ -221,16 +71,17 @@
     }
 
     .typing-container {
-        width: 70%;
-        font-size: 2.1rem;
+        width: 100%;
+        font-size: 1.8rem;
         font-weight: 700;
         font-family: "Pretendard";
+        line-height: 2.5rem;
         word-break: keep-all;
         position: absolute;
         text-align: center;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 170px;
+        bottom: 300px;
     }
 
     #cursor {
@@ -288,16 +139,16 @@
         right: 0;
         z-index: 99;
         margin: 0px auto;
-        display: none;
     }
     .nav_wrap {
         background-color: var(--main-color);
-        width: 50%;
+        width: 100%;
         height: 100vh;
         position: fixed;
         top: 0;
         right: 0;
         padding: 20px;
+        box-sizing: border-box;
     }
     .nav_wrap .close {
         display: flex;
@@ -305,16 +156,16 @@
         align-items: center;
     }
     nav .close img {
-        width: 200px;
+        width: 150px;
     }
     nav .close i {
-        font-size: 50px;
+        font-size: 30px;
         cursor: pointer;
         color: #fff;
     }
     nav .menu {
         width: 390px;
-        margin: 20px 50px;
+        margin: 20px 30px;
         position: relative;
         overflow: hidden;
     }
@@ -341,12 +192,12 @@
         left: 15px;
     }
     nav .menu li.on p {
-        left: 0px;
+        left: 10px;
         transition: 0.5s;
     }
 
     nav h2 {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     /* container */
@@ -358,16 +209,15 @@
 
     #con1 {
         width: 100%;
-        height: 100vh;
         position: relative;
-        padding-top: 100px;
+        padding: 100px 0;
         box-sizing: border-box;
         overflow: hidden;
     }
     #con1 h2 {
         font-size: 60px;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         color: var(--main-color);
         opacity: 0;
         transform: translateY(200px);
@@ -380,16 +230,14 @@
     .con1_wrap {
         width: 98%;
         margin: 0px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
     }
 
     .con1_wrap .idphoto {
-        width: 300px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         border-radius: 100px;
+        margin: 0 auto;
+        display: block;
         transform: translateX(-200px);
         opacity: 0;
         transition: 1s;
@@ -399,15 +247,10 @@
         transform: translateX(0);
         opacity: 1;
     }
-    .con1_wrap .profile {
-        width: 95%;
-        justify-content: space-between;
-        display: flex;
-    }
-
+    .con1_wrap .profile,
     .con1_wrap .profile1 {
-        display: flex;
-        gap: 20px;
+        width: 60%;
+        margin: 0 auto;
     }
 
     .con1_wrap h4 {
@@ -415,6 +258,7 @@
         margin: 20px 0px;
         opacity: 0;
         transition: 1s;
+        text-align: center;
     }
     .tracking-in-expand-fwd {
         opacity: 0;
@@ -447,8 +291,12 @@
         margin: 5px 0px;
         transition: 1s;
         opacity: 0;
-        font-size: 14px;
+        font-size: 16px;
         transition-delay: 0.6s;
+    }
+    .con1_wrap .licence,
+    .con1_wrap .experience {
+        text-align: center;
     }
     .con1_wrap p.on {
         opacity: 1;
@@ -477,17 +325,15 @@
         width: 100%;
         background-color: var(--main-color);
         position: absolute;
-        bottom: 50px;
+        bottom: 30px;
         display: flex;
         padding: 10px;
-        margin-bottom: 30px;
     }
     .flow div {
         animation: flow 20s infinite linear;
     }
     .flow div p {
         width: 200px;
-
         text-align: center;
     }
     .flow div:first-child {
@@ -517,76 +363,56 @@
         background-color: #000;
         color: #fff;
         padding-top: 120px;
+        overflow: hidden;
         box-sizing: border-box;
     }
     .con2_wrap {
         width: 100%;
-        display: flex;
-        justify-content: space-around;
         margin: 0 auto;
     }
-    .con2_wrap .menu {
-        width: 30%;
-        height: 100vh;
-        text-align: center;
-        position: sticky;
-        overflow: visible;
-        top: 200px;
-    }
+
     .con2_wrap .menu h2 {
         font-family: var(--main-font);
-        font-size: 55px;
+        font-size: 70px;
         text-align: center;
         margin-top: 50px;
     }
     .con2_wrap .menu .index {
-        font-size: 20px;
-        margin: 20px 0px;
-    }
-    .con2_wrap .index li {
-        margin: 20px auto;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    .con2_wrap .index li.on {
-        width: 150px;
-        padding: 10px;
-        border-radius: 50px;
-        background-color: var(--main-color);
+        display: none;
     }
 
     /*목업*/
     #con2 .portfolio {
-        width: 60%;
-        overflow: hidden;
-        margin-top: 300px;
+        width: 99%;
+        margin-top: 150px;
     }
     #con2 .portfolio li {
-        height: 800px;
-        margin-bottom: 200px;
+        height: 700px;
+        margin-bottom: 150px;
     }
     #con2 .portfolio img {
-        width: 100%;
+        width: 95%;
         height: 450px;
         display: block;
+        margin: 0 auto;
         border-radius: 30px;
     }
 
     #con2 li .project {
         width: 100%;
         display: flex;
-        justify-content: center;
-        gap: 15px;
+        justify-content: space-between;
+        gap: 10px;
         align-items: flex-start;
         padding: 0 20px;
         box-sizing: border-box;
+        word-break: keep-all;
     }
     #con2 li .project h3 {
         margin: 10px 0px;
     }
     .project_txt .view {
         font-size: 14px;
-        word-break: keep-all;
     }
     .project_txt .btn {
         width: 150px;
@@ -698,20 +524,25 @@
         text-align: center;
     }
     .contact h2 {
-        font-size: 60px;
+        font-size: 55px;
         font-family: var(--main-font);
         margin-bottom: 30px;
     }
     #con4 .con4_pic {
-        width: 350px;
+        width: 300px;
     }
     .snsicon {
         width: 95%;
         display: flex;
+        flex-wrap: wrap;
     }
     .snsicon li {
+        width: calc(100% / 2 - 80px);
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 30px;
         margin: 10px 0px;
         position: relative;
     }
@@ -732,12 +563,14 @@
         justify-content: center;
         align-items: center;
         opacity: 0;
+        position: absolute;
+        left: 85px;
         transition: 1.2s;
         transition-delay: 0.2s;
     }
 
     .snsicon div.on {
-        width: 160px;
+        width: 150px;
         opacity: 1;
     }
 
