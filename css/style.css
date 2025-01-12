@@ -3145,7 +3145,7 @@
         background-color: #fff;
         border-radius: 25px;
         position: fixed;
-        right: 50px;
+        right: 10px;
         bottom: 100px;
         text-align: center;
         z-index: 99;
@@ -3407,7 +3407,7 @@
 
     .con2_wrap .menu h2 {
         font-family: var(--main-font);
-        font-size: 70px;
+        font-size: 3.5rem;
         text-align: center;
         margin-top: 50px;
     }
@@ -3425,8 +3425,8 @@
         margin-bottom: 150px;
     }
     #con2 .portfolio img {
-        width: 95%;
-        height: 450px;
+        width: 98%;
+        height: 400px;
         display: block;
         margin: 0 auto;
         border-radius: 30px;
@@ -3504,8 +3504,8 @@
     }
     #con3 .ilust li img {
         width: 300px;
-        height: 424px;
-        border-radius: 150px;
+        height: 350px;
+        border-radius: 130px;
     }
     #con3 .modal {
         width: 100%;
@@ -3571,17 +3571,16 @@
         flex-wrap: wrap;
     }
     .snsicon li {
-        width: calc(100% / 2 - 80px);
+        width: calc(100% / 2 - 60px);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
-        padding: 0 30px;
-        margin: 10px 0px;
+        gap: 70px;
+        margin: 10px 15px;
         position: relative;
     }
     .snsicon img {
-        width: 60px;
+        width: 50px;
         background-color: #fff;
         border-radius: 15px;
         padding: 5px;
@@ -3589,16 +3588,14 @@
     }
     .snsicon div {
         width: 0px;
-        height: 60px;
+        height: 50px;
         border: 2px solid #000;
         font-size: 14px;
         border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        align-content: center;
         opacity: 0;
         position: absolute;
-        left: 85px;
+        left: 45px;
         transition: 1.2s;
         transition-delay: 0.2s;
     }
