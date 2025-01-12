@@ -1,0 +1,28 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+body {
+    color: #222;
+    overflow-x: hidden;
+}
+.hide {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+@font-face {
+    font-family: "brodway";
+    src: url(../webfont/BROADW[su051388].TTF) format(woff);
+}

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>정희윤's portfolio</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/style.js"></script>
+    </head>
+    <body>
+        <!-- intro -->
+        <div class="intro">
+            <div class="intro_wrap">
+                <div class="intro_content intro_top">
+                    <span class="intro_txt"
+                        >huiyun's <br />
+                        portfolio</span
+                    >
+                </div>
+                <div class="intro_content intro_bottom">
+                    <p class="hide">시작화면의 선을 만들기 위한 빈태그</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- header -->
+
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="로고" />
+                    <img class="emblum" src="img/emblum.png" alt="앰블럼" />
+                </a>
+            </h1>
+            <ul>
+                <li id="header_home" class="menu_active">
+                    <a href="#">HOME</a>
+                </li>
+                <li id="header_about">
+                    <a href="#con1">ABOUT</a>
+                </li>
+                <li id="header_pofol">
+                    <a href="#con2">PORTFOLIO</a>
+                </li>
+                <li id="header_design">
+                    <a href="#con3">DESIGN</a>
+                </li>
+                <li id="header_contact">
+                    <a href="#con4">CONTACT</a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </header>
+
+        <!-- visual -->
+        <div id="visual">
+            <div class="keyword">
+                <h2>
+                    <span>Persistent</span>
+                </h2>
+            </div>
+
+            <div class="typing-container">
+                <span id="text"></span><span id="cursor"></span>
+            </div>
+            <div class="top_btn">
+                <a href="#">
+                    <i class="fa-solid fa-angle-up"></i>
+                    <p>top</p></a
+                >
+            </div>
+        </div>
+
+        <!-- nav -->
+        <nav>
+            <div class="nav_wrap">
+                <ul class="close">
+                    <li>
+                        <img src="img/logo_fff.png" alt="로고이미지" />
+                    </li>
+                    <li><i class="fa-solid fa-xmark"></i></li>
+                </ul>
+                <ul class="menu">
+                    <li class="on">
+                        <a href="#con1">
+                            <p>자기소개</p>
+                            <h2>ABOUT</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#con2">
+                            <p>포트폴리오</p>
+                            <h2>PORTFOLIO</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#con3">
+                            <p>디자인</p>
+                            <h2>DESIGN</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#con4">
+                            <p>문의</p>
+                            <h2>CONTACT</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- container -->
+        <div class="container">
+            <section id="con1">
+                <h2>About</h2>
+                <div class="con1_wrap">
+                    <img
+                        class="idphoto"
+                        src="img/profiliepic.jpg"
+                        alt="프로필사진"
+                    />
+                    <div class="about">
+                        <ul class="profile">
+                            <li class="profile_txt">
+                                <h4 class="tracking-in-expand-fwd">Profile</h4>
+                                <p><span class="btween">NAME</span>정희윤</p>
+                                <p>
+                                    <span class="btween">BIRTH</span>1995.10.09
+                                </p>
+                                <p>
+                                    <span class="btween">PHONE</span
+                                    >010-9808-0402
+                                </p>
+                                <p><span>MAIL</span>huiyun1009@gamil.com</p>
+                            </li>
+                            <li>
+                                <h4 class="tracking-in-expand-fwd">
+                                    Experience
+                                </h4>
+                                <div>
+                                    <p>2024.06 ~ 2023.03 구로세란의원</p>
+                                    <p>2022.09 ~ 2021.12 금천수요양병원</p>
+                                    <p>2019.03 ~ 2017.01 하늘빛재활병원</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="tracking-in-expand-fwd">Licence</h4>
+                                <div>
+                                    <p>GTQ 포토샵 1급</p>
+                                    <p>운전면허 2종보통</p>
+                                    <p>물리치료사 면허증</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="profile1">
+                            <li>
+                                <h4 class="tracking-in-expand-fwd">
+                                    Education
+                                </h4>
+                                <div>
+                                    <p>2024 웹디자인 & 웹퍼블리셔 수료</p>
+                                    <p>
+                                        2018 동남보건대학교<small
+                                            >(물리치료 학사전공)</small
+                                        >
+                                    </p>
+
+                                    <p>
+                                        2017 경북전문대학교<small
+                                            >(물리치료과 전공)</small
+                                        >
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="skill">
+                                <h4 class="tracking-in-expand-fwd">Skill</h4>
+                                <div>
+                                    <img
+                                        src="img/html_icon.png"
+                                        alt="html아이콘"
+                                    />
+                                    <img
+                                        src="img/css_icon.png"
+                                        alt="css아이콘"
+                                    />
+                                    <img
+                                        src="img/js_icon.png"
+                                        alt="javascript아이콘"
+                                    />
+                                    <img
+                                        src="img/jquery_icon.png"
+                                        alt="jquery아이콘"
+                                    />
+                                    <img
+                                        src="img/Photoshop_icon.png"
+                                        alt="포토샵아이콘"
+                                    />
+                                    <img
+                                        src="img/Illustrator_icon.png"
+                                        alt="일러스트아이콘"
+                                    />
+                                    <img
+                                        src="img/2D_Figma.png"
+                                        alt="피그마아이콘"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flow">
+                    <div>
+                        <p>ui / ux desiner</p>
+                        <p>web publisher</p>
+                        <p>fornt-end</p>
+                        <p>ui / ux desiner</p>
+                        <p>web publisher</p>
+                        <p>fornt-end</p>
+                    </div>
+                    <div>
+                        <p>ui / ux desiner</p>
+                        <p>web publisher</p>
+                        <p>fornt-end</p>
+                        <p>ui / ux desiner</p>
+                        <p>web publisher</p>
+                        <p>fornt-end</p>
+                    </div>
+                    <div>
+                        <p>ui / ux desiner</p>
+                        <p>web publisher</p>
+                        <p>fornt-end</p>
+                        <p>ui / ux desiner</p>
+                        <p>web publisher</p>
+                        <p>fornt-end</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- con2 -->
+
+            <section id="con2">
+                <div class="con2_wrap">
+                    <div class="menu">
+                        <h2>PORTFOLIO</h2>
+                        <ul class="index">
+                            <li class="on">
+                                <p>로보락</p>
+                            </li>
+                            <li>
+                                <p>국립중앙박물관</p>
+                            </li>
+                            <li>
+                                <p>풀무원 투오</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="portfolio">
+                        <li>
+                            <a href="https://huiyun-1009.github.io/roborock/">
+                                <img
+                                    src="img/robo.png"
+                                    alt="로보락 홈페이지 목업이미지"
+                                />
+                            </a>
+                            <div class="project">
+                                <div class="project_txt">
+                                    <h3>로보락(반응형)</h3>
+                                    <p class="view">
+                                        로보락 홈페이지를 리뉴얼 하였습니다.
+                                    </p>
+                                    <div class="btn">
+                                        <a
+                                            href="https://drive.google.com/file/d/1soZur8aZiK1W8m269PPUssiDrHPjyq-Q/view?usp=sharing"
+                                            >기획안
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="project_tool">
+                                    <p>작업기간 : 7일</p>
+                                    <p>기여도 : 100%</p>
+                                    <p>TOOL : HTML, CSS, JQUERY</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="museum">
+                            <a href="https://huiyun-1009.github.io/museum/">
+                                <img src="img/museum.png" />
+                                <!-- <div class="click"><p>click me</p></div> -->
+                            </a>
+
+                            <div class="project">
+                                <div class="project_txt">
+                                    <h3>국립중앙박물관 (반응형)</h3>
+                                    <p class="view">
+                                        국립중앙박물관 리뉴얼 주제로 팀으로
+                                        제작한 페이지입니다.
+                                    </p>
+                                    <div class="btn">
+                                        <a
+                                            href="https://huiyun-1009.github.io/museum/"
+                                            >site
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="project_tool">
+                                    <p>작업기간 : 10일</p>
+                                    <p>
+                                        기여도 : 25% (header, nav, footer,
+                                        특별전시페이지)
+                                    </p>
+                                    <p>TOOL : HTML, CSS, JQUERY</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pulmuone">
+                            <a href=" https://huiyun-1009.github.io/pulmuone/">
+                                <img src="img/pulmuone_mokup.png" />
+                                <!-- <div class="click"><p>click me</p></div> -->
+                            </a>
+
+                            <div class="project">
+                                <div class="project_txt">
+                                    <h3>풀무원 투오 (클론코딩)</h3>
+                                    <p class="view">
+                                        풀무원 투오 사이트 클론코딩으로,
+                                        제이쿼리를 사용해 <br />움직임까지
+                                        구연하였습니다.
+                                    </p>
+                                    <div class="btn">
+                                        <a
+                                            href=" https://huiyun-1009.github.io/pulmuone/"
+                                            >site
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="project_tool">
+                                    <p>작업기간 : 7일</p>
+                                    <p>기여도 : 100% (메인페이지)</p>
+                                    <p>TOOL : HTML, CSS, JQUERY</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- con3 -->
+
+            <section id="con3">
+                <div class="design">
+                    <h2>DESIGN</h2>
+                    <ul class="ilust">
+                        <li>
+                            <img src="img/design_bung.png" alt="붕세권그림" />
+                        </li>
+                        <li>
+                            <img src="img/design_run.png" alt="운동회그림" />
+                        </li>
+                        <li>
+                            <img
+                                src="img/design_heart.png"
+                                alt="하트캐릭터그림"
+                            />
+                        </li>
+                        <li>
+                            <img src="img/comingsoon.JPG" alt="준비중입니다" />
+                        </li>
+                        <li>
+                            <img src="img/comingsoon.JPG" alt="준비중입니다" />
+                        </li>
+                        <li>
+                            <img src="img/comingsoon.JPG" alt="준비중입니다" />
+                        </li>
+                    </ul>
+
+                    <ul class="modal">
+                        <li>
+                            <i class="fa-solid fa-xmark"></i>
+                            <img src="img/design_bung.png" alt="붕세권그림" />
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-xmark"></i>
+                            <img src="img/design_run.png" alt="운동회그림" />
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-xmark"></i>
+                            <img
+                                src="img/design_heart.png"
+                                alt="하트캐릭터그림"
+                            />
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-xmark"></i>
+                            <img src="img/comingsoon.JPG" alt="준비중입니다" />
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-xmark"></i>
+                            <img src="img/comingsoon.JPG" alt="준비중입니다" />
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-xmark"></i>
+                            <img src="img/comingsoon.JPG" alt="준비중입니다" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--con4-->
+
+            <section id="con4">
+                <div class="contact">
+                    <h2>Thank you for watching</h2>
+                    <img
+                        class="con4_pic"
+                        src="img/footerpic.jpg"
+                        alt="내그림"
+                    />
+                    <div class="contact_wrap">
+                        <ul class="snsicon">
+                            <li>
+                                <img
+                                    src="img/mail_icon.png"
+                                    alt="이메일아이콘"
+                                />
+                                <div>
+                                    <a href="#">huiyun1009@<br />gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img
+                                    src="img/phone_icon.jpg"
+                                    alt="전화아이콘"
+                                />
+                                <div>010-9808-0402</div>
+                            </li>
+                            <li>
+                                <img
+                                    src="img/github_icon.png"
+                                    alt="블로그아이콘"
+                                />
+                                <div>https://github.com<br />/huiyun-1009</div>
+                            </li>
+                            <li>
+                                <img
+                                    src="img/katalk_icon.png"
+                                    alt="카카오톡아이콘"
+                                />
+                                <div>huiyun95</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <img src="img/logo_fff.png" alt="로고" />
+            <p>ⓒCopyright정희윤. All Rights Reserved</p>
+            <h5>
+                본사이트는 개인포트폴리오 사이트로 제작되었으며 상업적 목적이
+                아닙니다.
+            </h5>
+        </footer>
+    </body>
+</html>
