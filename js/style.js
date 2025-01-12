@@ -209,7 +209,7 @@ $(function () {
             scrub: 3,
             start: "top top",
             end: "300%",
-            markers: true,
+            markers: false,
         },
     });
 
