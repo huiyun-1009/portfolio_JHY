@@ -684,11 +684,15 @@
     }
     #con3 .modal img {
         width: 500px;
-        height: 600px;
+        height: 700px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    #con3 .illust_width img {
+        width: 700px;
+        height: 550px;
     }
 
     /* con4 */
